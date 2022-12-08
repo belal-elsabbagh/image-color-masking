@@ -4,8 +4,12 @@ import numpy as np
 
 def morph(img, mode, kernel=None, kernel_size=None):
     if kernel is None and kernel_size is not None:
-        kernel = np.ones(kernel_size, np.uint8)
+        kernel = default_kernel(kernel_size)
     return cv2.morphologyEx(img, mode, kernel)
+
+
+def default_kernel(kernel_size):
+    return np.ones(kernel_size, dtype=np.uint8)
 
 
 def morph_open(img, kernel=None, kernel_size=None):
