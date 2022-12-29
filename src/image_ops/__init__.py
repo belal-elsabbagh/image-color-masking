@@ -60,7 +60,7 @@ def draw_rectangle_from_detection(_img, res, color=(0, 255, 0), thickness=2):
     if res is None:
         return _img
     for x, y, w, h in res:
-        draw_rectangle_on_image(img, (x,y), w, h)
+        draw_rectangle_on_image(img, (x,y), w, h, color, thickness)
     return img
 
 
