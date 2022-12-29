@@ -1,5 +1,3 @@
-import cv2
-
 from src.image_ops import read_img
 from test import test_color_masking
 
