@@ -8,7 +8,7 @@ if __name__ == '__main__':
     rainbow_img = read_img(rainbow_path)
     color_pencils_img = read_img(color_pencils_path)
 
-    orange_bgr = [0,165,255]
+    orange_bgr = [0,120,255]
 
     test_color_masking(rainbow_img[:,:,:3], orange_bgr, 82.5)
-    test_color_masking(color_pencils_img, orange_bgr, 105)
+    test_color_masking(color_pencils_img, orange_bgr, 70)
